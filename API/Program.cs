@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 
-// CORS ayarlarýný ekleyin
+// CORS ayarlarý    
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",

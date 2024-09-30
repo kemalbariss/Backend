@@ -102,6 +102,8 @@ namespace API.Controllers
             order.ProductId = orderUpdateDto.ProductId;
             order.Status = orderUpdateDto.Status;
             order.CustomerId = orderUpdateDto.CustomerId;
+            order.createDate = orderUpdateDto.createDate;
+            order.Description = orderUpdateDto.Description;
 
             
 

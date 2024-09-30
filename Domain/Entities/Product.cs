@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace Domain.Entities
     {
         public string Name { get; set; }
         public string Description { get; set; }
+        //public string NewDescription { get; set; }
         public int Quantity { get; set; } //miktar demek
         public double Price { get; set; }
         public string Image { get; set; }
@@ -41,6 +43,7 @@ namespace Domain.Entities
     {
         public string Name { get; set; }
         public string Description { get; set; }
+       // public string Description2 { get; set; }
         public int Quantity { get; set; }
         public double Price { get; set; }
         public string Image { get; set; }
