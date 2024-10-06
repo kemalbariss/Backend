@@ -82,6 +82,8 @@ namespace API.Controllers
             return CreatedAtAction(nameof(GetCustomers), new { id = customer.CustomerId }, customer);
         }
 
+
+
         [HttpPut("{id}")]
         public ActionResult PutCustomer(int id, [FromBody] CustomerUpdateDto customerUpdateDto)
         {
@@ -98,6 +100,7 @@ namespace API.Controllers
             customer.LastName = customerUpdateDto.LastName;
             customer.PhoneNumber = customerUpdateDto.PhoneNumber;
             customer.Email = customerUpdateDto.Email;
+           
 
             try
             {
